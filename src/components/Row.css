@@ -1,0 +1,42 @@
+.row{
+    margin-left:20px;
+    color:white;
+}
+
+.row_posters{
+    display:flex;
+    overflow-y:hidden;
+    /* will create a scrollbar only for the posters and rest will stay where it is */
+    overflow-x: scroll;
+    padding:20px;
+}
+
+.row_posters::-webkit-scrollbar{
+    /* tells all browsers to hide the scrollbar from overflow-x and keep it's functionality */
+    display:none;
+}
+
+
+.posters{
+    object-fit: contain;
+    width:100%;
+    max-height:100px;
+    transition: transform 450ms;
+    margin-right:10px;
+}
+
+.posterLarge{
+    object-fit: contain;
+    width:100%;
+    max-height:250px;
+    transition: transform 450ms;
+    margin-right:10px;
+}
+
+.posters:hover{
+    transform: scale(1.08);
+}
+
+.posterLarge:hover{
+    transform: scale(1.09);
+}
